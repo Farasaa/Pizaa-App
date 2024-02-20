@@ -1,0 +1,401 @@
+html {
+    
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    margin: 0;  
+} 
+/* styling of the div containing all elements */
+header {
+    
+    padding: 0;
+    margin: 0;
+}
+
+.contianer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF; 
+    padding: 0;
+    margin: 0;
+}
+
+/* styling of the Logo div */
+
+h1{
+    font-size: 1.875rem;
+    width: 10.58em;
+    height: 1.5em;
+    padding-left: 1.25em;
+    
+}
+.header-img{
+    padding: 0;
+    margin: 0 auto;
+    background-image: url("ferks-guare-KEZdWfYD-ow-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 37.5em;
+    height: 10.4375em;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-family: 'Smooch Sans', sans-serif;
+    
+}
+
+p {
+    padding-left: 1.25em;
+    width: 17.21625em;
+    height: 0.5em;
+}
+
+/* styling pizza emoji */
+
+.pizza-icon {
+    font-size: 5em;
+    padding-top: 0.625em;
+    justify-content: center;
+}
+
+/* styling menu Item */
+
+.pizza-item{
+    position: relative;
+    margin: 1.875em auto;
+    width: fit-content;
+    height: 10em;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Smooch Sans', sans-serif;
+    border-bottom:  0.125em solid #D2D2D2;
+}
+
+.item-price {
+    
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;    
+}
+
+.item-title{   
+    margin-top: 0.25em;
+    padding-left: 1.125em;
+    font-size: 1.75rem;
+}
+
+.item-ingredients{
+    width: 22.375em;
+    height: 1.5em;
+    font-size: 1rem;
+}
+
+.fa-solid {
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    font-size: 1.5rem;
+    padding: 0.625em;
+    border: 0.0625em solid #DEDEDE;
+    border-radius: 100px;
+    color: #3C3C3C;
+    cursor: pointer;
+}
+
+/* styling order section */
+.total-item{
+    display: flex;
+    flex-direction: row;
+}
+.order-title{   
+   
+    width: 5.625em;
+    height: 1.0625em;
+    font-size: 1.75rem;
+    color: #000000;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.order-summary {
+    flex-direction: column;
+    margin: 1.875em auto;
+    width: 31.75em;
+    min-height: 8.75em;
+    font-family: 'Smooch Sans', sans-serif;
+    border-bottom: 2px solid #393333;
+}
+#order-list{
+    display: none;
+}
+.order-item{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+}
+
+.total-order-view{
+    display: flex;
+    flex-direction: row;
+    width: 31.25em;
+}
+
+#remove-btn{
+    border: none;
+    margin-top: 0.625em;
+    width: 3.125em;
+    height: 1.375em;
+    color: #BBBBBB;
+    background-color: white;
+    font-size: 0.75rem;
+    border-radius: 25px;
+    margin-left: 0.625em;
+    cursor: pointer;
+}
+.order-price {
+    margin-top: 0.1875em;
+    margin-right: 0.1875em;
+    width: 1.1875em;
+    height: 1.5em;    
+    margin-left: auto;
+}
+
+/* Total price  */
+
+.total-item{
+    margin-top: 0.625em;
+    display: flex;
+    width: 31.25em;
+}
+
+.total-price{
+    width: 22.375em;
+    height: 1.75em;
+    margin-top: 0.25em;
+    padding-left: 1.125em;
+    font-size: 1.75rem;
+}
+
+#complete-btn{
+    border: none;
+    border-radius: 25px;
+    width: 20em;
+    height: 3.75em;
+    background-color: #16DB99;
+    color: white;
+    font-size: 1.625rem;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+}
+
+/* Form Styling */
+
+#card-form{
+    display: none;
+}
+.form-title{
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+.pay-form{
+    border: 3px solid #FFFFFF;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 40.015em;
+    height: 21.875em;
+    margin: auto;
+    gap: 0.3125em;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    background-color: #FFFFFF;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.form-input{
+    width: 27.5em;
+    height: 3.8125em;
+    border: 1px solid #757575;
+    border-radius: 3px;
+    padding-left: 10px;
+    color: #757575;
+    font-size: 1.25em;
+    font-family: 'Rubik', sans-serif;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .hide-border-bottom{
+    margin: 1.875em auto;
+    width: 31.75em;
+    min-height: 8.75em;
+    border: none;
+  } 
+  #pay-btn{
+    border: none;
+    width: 8.125em;
+    height: 3.75em;
+    background-color: #16DB99;
+    color: white;
+    font-size:  1.625rem;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+  }
+
+  .form-input::placeholder{
+    color: #757575;
+    font-size: 1.25rem;
+    font-family: 'Rubik', sans-serif;
+    
+
+  }
+
+/* Confirmation Message */
+.confirmation-message{
+    width: 18.5em;
+    height: 2.6875em;
+    font-family: 'Rubik', sans-serif;  
+    background-color: #ECFDF5;
+    color: #065F46;
+    font-size: 1.625rem;
+    align-content: center;
+    padding-top: 2.5em;
+}
+
+/* Buttons Effects */
+
+#complete-btn:hover,
+#pay-btn:hover{
+    background-color: rgb(116, 240, 116);
+}
+
+#complete-btn:active,
+#pay-btn:active{
+    background-color: #023121;
+}
+
+ #remove-btn:hover{
+        background-color: #000000;
+        color: white;
+}
+
+
+.fa-solid, #remove-btn:active{
+    background-color: #DEDEDE;
+    color: #393333;
+}
+
+.fa-solid:hover{
+    background-color: #000000;
+        color: white;
+}
+.fa-solid:active{
+    background-color: #DEDEDE;
+    color: #393333;
+}
+
+.fa-regular{
+    font-size: 2rem;
+    border-radius: 100px;
+}
+
+.fa-regular:hover{
+    background-color: #000000;
+        color: white;
+}
+
+.fa-regular:active{
+    background-color: #DEDEDE;
+    color: #393333;
+}
+
+@media(max-width: 420px){
+    .header-img{
+        width: 29em;
+        padding-top: 1em;
+        padding-left: 1em;
+    }    
+
+    .pizza-item{
+        width: 20em;
+    }
+
+    .order-title{   
+        width: 5.625em;
+        margin-left: 4em;
+        
+    }
+
+    .order-item{
+        width: 20em;
+    }
+    .order-summary {
+        width: 20em;
+    }
+    #complete-btn{
+        width: 12em;
+        height: 2.75em;
+    }
+
+    .order-price {
+        width: 10em;
+    }
+
+    .total-item{
+        width: 21em;
+    }
+    
+    .total-price{
+        width: 24em;
+        
+    }
+    .pay-form{
+        width: 18em;
+        top: 0;
+        bottom: 0;
+        right: 10em;
+        left: 0;
+}
+.form-input{
+    
+    width: 10em;
+    
+}
+#pay-btn{
+    width: 10em;
+    }
+
+    .contianer{
+        width: fit-content;
+    }
+
+    .confirmation-message{
+        width: 18.5em;
+        height: 2.6875em;
+        font-size: 1.5rem;
+        align-content: center;
+        padding-top: 2.5em;
+    }
+
+}
+
+
+
+
