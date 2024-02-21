@@ -326,20 +326,23 @@ input::-webkit-inner-spin-button {
     color: #393333;
 }
 
-@media(max-width: 420px){
+@media(max-width: 450px){
     .header-img{
-        width: 29em;
+        width: 20em;
         padding-top: 1em;
         padding-left: 1em;
     }    
 
     .pizza-item{
         width: 20em;
+        font-size: 1em;
+        
     }
 
     .order-title{   
         width: 5.625em;
-        margin-left: 4em;
+        margin-left: 2em;
+       
         
     }
 
